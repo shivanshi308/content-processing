@@ -1,0 +1,56 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "version": {
+      "type": "number"
+    },
+    "cloud_job_type": {
+      "type": "string"
+    },
+    "ccvid": {
+      "type": "string"
+    },
+    "source_info": {
+      "type": "string"
+    },
+    "output": {
+      "type": "object",
+      "properties": {
+        "renditions": {
+          "type": "array",
+          "items": [
+            {
+              "label": {
+                "type": "string"
+              },
+              "name": {
+                "type": "string"
+              },
+              "remote": {
+                "type": "string"
+              },
+              "storage_type": {
+                "type": "string"
+              },
+              "preset": {
+                "video_preset": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "audio_preset": {
+                  "type": "object",
+                  "properties": {}
+                },
+                "custom_preset": {
+                  "type": "object",
+                  "properties": {}
+                }
+              }
+            }
+          ]
+        }
+      }
+    }
+  }
+}
